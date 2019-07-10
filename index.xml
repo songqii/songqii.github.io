@@ -11,12 +11,12 @@
     
     
     <item>
-      <title>Migrate to Hugo from Jekyll</title>
+      <title>话说hugo和markdown</title>
       <link>https://songqii.github.io/posts/my-first-post/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/my-first-post/</guid>
-      <description> 宋琪 </description>
+      <description>新部署的hugo，希望自己的博客可以有更多有用的东西</description>
     </item>
     
   </channel>
