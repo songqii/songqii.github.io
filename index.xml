@@ -26,7 +26,8 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/my-first-post/</guid>
-      <description>新部署的hugo，希望自己的博客可以有更多有用的东西
+      <description>##希望自己的博客可以有更多有用的东西
+关于Hugo golang编写的静态网站生成工具，和jekyll类似
 markdown语法 这段文字将被高亮显示&amp;hellip;
 标记下重点文字
    First Header Second Header     Content Cell Content Cell   Content Cell Content Cell     this shows up in italics: a happy day  :::golang func main(){ fmt.Println(&amp;ldquo;http://blog.songqi.me&amp;quot;) }</description>
