@@ -30,7 +30,8 @@
 关于Hugo golang编写的静态网站生成工具，和jekyll类似
 markdown语法 这段文字将被高亮显示&amp;hellip;
 标记下重点: Happy day
-func main(){ fmt.Println(&amp;quot;http://blog.songqi.me&amp;quot;) }  </description>
+func main(){ fmt.Println(&amp;quot;http://blog.songqi.me&amp;quot;) }   这是引用的内容
+ </description>
     </item>
     
   </channel>
