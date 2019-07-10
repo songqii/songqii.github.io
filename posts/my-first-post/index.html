@@ -12,14 +12,18 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="话说hugo和markdown"/>
-<meta name="twitter:description" content="新部署的hugo，希望自己的博客可以有更多有用的东西
-markdown语法  这段文字将被高亮显示&hellip;
- 标记下重点文字"/>
+<meta name="twitter:description" content=" 新部署的hugo，希望自己的博客可以有更多有用的东西
+markdown语法 这段文字将被高亮显示&hellip;
+标记下重点文字
+   First Header Second Header     Content Cell Content Cell   Content Cell Content Cell    this shows up in italics: a happy day
+func main(){ fmt.Println(&quot;http://blog.songqi.me&quot;) }  "/>
 
     <meta property="og:title" content="话说hugo和markdown" />
-<meta property="og:description" content="新部署的hugo，希望自己的博客可以有更多有用的东西
-markdown语法  这段文字将被高亮显示&hellip;
- 标记下重点文字" />
+<meta property="og:description" content=" 新部署的hugo，希望自己的博客可以有更多有用的东西
+markdown语法 这段文字将被高亮显示&hellip;
+标记下重点文字
+   First Header Second Header     Content Cell Content Cell   Content Cell Content Cell    this shows up in italics: a happy day
+func main(){ fmt.Println(&quot;http://blog.songqi.me&quot;) }  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://songqii.github.io/posts/my-first-post/" />
 <meta property="article:published_time" content="2014-03-10T00:00:00&#43;00:00"/>
@@ -79,11 +83,37 @@ markdown语法  这段文字将被高亮显示&hellip;
 
 <h3 id="markdown语法">markdown语法</h3>
 
-<blockquote>
-<p>这段文字将被高亮显示&hellip;</p>
-</blockquote>
+<p><b>这段文字将被高亮显示&hellip;<b></p>
 
 <p><code>标记下重点文字</code></p>
+
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><em>Content Cell</em></td>
+<td>Content Cell</td>
+</tr>
+
+<tr>
+<td>Content Cell</td>
+<td>Content Cell</td>
+</tr>
+</tbody>
+</table>
+
+<p>this shows up in italics: <em>a happy day</em></p>
+
+<pre><code class="language-golang">func main(){
+    fmt.Println(&quot;http://blog.songqi.me&quot;)
+}
+</code></pre>
 
     </div>
     <div class="post-footer">
