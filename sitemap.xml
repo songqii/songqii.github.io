@@ -4,13 +4,59 @@
   
   <url>
     <loc>https://songqii.github.io/posts/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/unix/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/windows/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/win_vs_unix/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/flutter/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/flutter/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/dart/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/google/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -22,12 +68,6 @@
   
   <url>
     <loc>https://songqii.github.io/tags/jekyll/</loc>
-    <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
