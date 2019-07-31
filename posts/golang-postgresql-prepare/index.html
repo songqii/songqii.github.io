@@ -12,10 +12,12 @@
     
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="golang使用prepare操作postgresqlDB"/>
-<meta name="twitter:description" content=" 背景 "/>
+<meta name="twitter:description" content=" 背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
+Mysql _stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;) _stmt.Exec(a1,b1)  Postgresql _stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;) _stmt.Exec(a1,b1)  "/>
 
     <meta property="og:title" content="golang使用prepare操作postgresqlDB" />
-<meta property="og:description" content=" 背景 " />
+<meta property="og:description" content=" 背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
+Mysql _stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;) _stmt.Exec(a1,b1)  Postgresql _stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;) _stmt.Exec(a1,b1)  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://songqii.github.io/posts/golang-postgresql-prepare/" />
 <meta property="article:published_time" content="2018-03-10T00:00:00&#43;00:00"/>
@@ -71,7 +73,23 @@
     <div class="post-content">
       
 
-<h3 id="背景">背景</h3>
+<h2 id="背景">背景</h2>
+
+<p>从mysql转为pg，对增删改查的语法没太多变化，但<code>预处理</code>还是有些不同</p>
+
+<h3 id="mysql">Mysql</h3>
+
+<pre><code class="language-golang">
+_stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;)
+
+_stmt.Exec(a1,b1)
+</code></pre>
+
+<h3 id="postgresql">Postgresql</h3>
+
+<pre><code class="language-golang">_stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;)
+_stmt.Exec(a1,b1)
+</code></pre>
 
     </div>
     <div class="post-footer">
