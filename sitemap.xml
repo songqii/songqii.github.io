@@ -49,6 +49,12 @@
   </url>
   
   <url>
+    <loc>https://songqii.github.io/tags/github/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://songqii.github.io/tags/unix/</loc>
     <lastmod>2017-03-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -62,6 +68,11 @@
   
   <url>
     <loc>https://songqii.github.io/posts/win_vs_unix/</loc>
+    <lastmod>2017-03-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/z/</loc>
     <lastmod>2017-03-10T00:00:00+00:00</lastmod>
   </url>
   

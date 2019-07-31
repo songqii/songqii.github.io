@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>github on halfhuman</title>
+    <link>https://songqii.github.io/tags/github/</link>
+    <description>Recent content in github on halfhuman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 10 Mar 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://songqii.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>刷刷</title>
+      <link>https://songqii.github.io/posts/z/</link>
+      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/z/</guid>
+      <description> 只是刷github </description>
+    </item>
+    
+  </channel>
+</rss>

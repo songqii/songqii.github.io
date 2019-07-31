@@ -29,5 +29,14 @@
 Mysql _stmt,_:=mysql.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=? AND b=?&amp;quot;) _stmt.Exec(a1,b1)  Postgresql _stmt,_:=pg.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=$1 AND b=$2&amp;quot;) _stmt.Exec(a1,b1)  </description>
     </item>
     
+    <item>
+      <title>刷刷</title>
+      <link>https://songqii.github.io/posts/z/</link>
+      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/z/</guid>
+      <description> 只是刷github </description>
+    </item>
+    
   </channel>
 </rss>
