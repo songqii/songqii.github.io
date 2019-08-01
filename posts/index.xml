@@ -62,7 +62,7 @@ func main(){ fmt.Println(&amp;quot;http://blog.songqi.me&amp;quot;) }   这是�
       <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/spf13-vim-3-0-release-and-new-website/</guid>
-      <description>spf13-vim is a cross platform distribution of vim plugins and resources for Vim.</description>
+      <description>嗯？</description>
     </item>
   </channel>
 </rss>
