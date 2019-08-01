@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://songqii.github.io/categories/</loc>
+    <lastmod>2018-03-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://songqii.github.io/posts/</loc>
     <lastmod>2018-03-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -29,6 +35,12 @@
   <url>
     <loc>https://songqii.github.io/posts/golang-lib/</loc>
     <lastmod>2018-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2018-03-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -112,24 +124,6 @@
   
   <url>
     <loc>https://songqii.github.io/tags/.vimrc/</loc>
-    <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/categories/</loc>
-    <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/categories/vim/</loc>
-    <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/categories/github/</loc>
     <lastmod>2012-04-06T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
