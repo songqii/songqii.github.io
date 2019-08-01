@@ -38,15 +38,6 @@
     </item>
     
     <item>
-      <title>github</title>
-      <link>https://songqii.github.io/tags/github/</link>
-      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>unix</title>
       <link>https://songqii.github.io/tags/unix/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
@@ -106,6 +97,42 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>.vimrc</title>
+      <link>https://songqii.github.io/tags/.vimrc/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/.vimrc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugins</title>
+      <link>https://songqii.github.io/tags/plugins/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/plugins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spf13-vim</title>
+      <link>https://songqii.github.io/tags/spf13-vim/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/spf13-vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>https://songqii.github.io/tags/vim/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/vim/</guid>
       <description></description>
     </item>
     
