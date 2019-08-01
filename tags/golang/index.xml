@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>golang on absolute-SQ</title>
+    <title>golang - Sq&#39;s blog</title>
     <link>https://songqii.github.io/tags/golang/</link>
-    <description>Recent content in golang on absolute-SQ</description>
+    <description>Recent content in golang on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 11 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://songqii.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="https://songqii.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>golang标准库笔记</title>
@@ -17,17 +15,14 @@
       
       <guid>https://songqii.github.io/posts/golang-lib/</guid>
       <description> text/template strings strconv </description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>golang使用prepare操作postgresqlDB</title>
       <link>https://songqii.github.io/posts/golang-postgresql-prepare/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/golang-postgresql-prepare/</guid>
       <description> 背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
-Mysql _stmt,_:=mysql.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=? AND b=?&amp;quot;) _stmt.Exec(a1,b1)  Postgresql _stmt,_:=pg.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=$1 AND b=$2&amp;quot;) _stmt.Exec(a1,b1)  </description>
+Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=? AND b=?&amp;quot;) _stmt.Exec(a1,b1)  Postgresql package main ... ... _stmt,_:=pg.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=$1 AND b=$2&amp;quot;) _stmt.Exec(a1,b1)  </description>
     </item>
-    
   </channel>
 </rss>

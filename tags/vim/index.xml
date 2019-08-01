@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>vim on absolute-SQ</title>
+    <title>vim - Sq&#39;s blog</title>
     <link>https://songqii.github.io/tags/vim/</link>
-    <description>Recent content in vim on absolute-SQ</description>
+    <description>Recent content in vim on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 06 Apr 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://songqii.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="https://songqii.github.io/tags/vim/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>刷刷github</title>
@@ -16,8 +14,7 @@
       <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/spf13-vim-3-0-release-and-new-website/</guid>
-      <description>只是刷github 4368 12313742 16273 19953 21604 22181 23786 32128 27880 13405 23436 11499 29937 25368 14449 25147 12206 12548 10847 4132 27356 30651 3944 32645 17472 7620 2663 26861 7983 18450 20615 15890 18952 15234 9918 9050 21430 28256 3916 6485 4401 20484 4220 27113 4972 16962 24687 15482 6424</description>
+      <description>spf13-vim is a cross platform distribution of vim plugins and resources for Vim.</description>
     </item>
-    
   </channel>
 </rss>

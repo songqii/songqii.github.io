@@ -1,14 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on absolute-SQ</title>
+    <title>Tags - Sq&#39;s blog</title>
     <link>https://songqii.github.io/tags/</link>
-    <description>Recent content in Tags on absolute-SQ</description>
+    <description>Recent content in Tags on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 11 Mar 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://songqii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="https://songqii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>golang</title>
@@ -17,54 +15,42 @@
       
       <guid>https://songqii.github.io/tags/golang/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>postgresql</title>
       <link>https://songqii.github.io/tags/postgresql/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/postgresql/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>prepare</title>
       <link>https://songqii.github.io/tags/prepare/</link>
       <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/prepare/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>unix</title>
       <link>https://songqii.github.io/tags/unix/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/unix/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>windows</title>
       <link>https://songqii.github.io/tags/windows/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/windows/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Flutter</title>
       <link>https://songqii.github.io/tags/flutter/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/flutter/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>dart</title>
       <link>https://songqii.github.io/tags/dart/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
@@ -72,69 +58,5 @@
       <guid>https://songqii.github.io/tags/dart/</guid>
       <description></description>
     </item>
-    
-    <item>
-      <title>google</title>
-      <link>https://songqii.github.io/tags/google/</link>
-      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/google/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://songqii.github.io/tags/hugo/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jekyll</title>
-      <link>https://songqii.github.io/tags/jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/jekyll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>.vimrc</title>
-      <link>https://songqii.github.io/tags/.vimrc/</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/.vimrc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plugins</title>
-      <link>https://songqii.github.io/tags/plugins/</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/plugins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spf13-vim</title>
-      <link>https://songqii.github.io/tags/spf13-vim/</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/spf13-vim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>vim</title>
-      <link>https://songqii.github.io/tags/vim/</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/vim/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>
