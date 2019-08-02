@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>golang使用prepare操作postgresqlDB &middot; Sq&#39;s blog</title>
+  <title>golang标准库-sort &middot; Sq&#39;s blog</title>
   <meta name="description" content="" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -40,36 +40,53 @@
     <main class="content side-text-padding">
       <article class="post dropcase">
         <header class="post-header">
-        	<h1 class="post-title">golang使用prepare操作postgresqlDB</h1>
-          <p class="post-date">Posted <time datetime="2018-03-10">Mar 10, 2018</time></p>
+        	<h1 class="post-title">golang标准库-sort</h1>
+          <p class="post-date">Posted <time datetime="2018-06-11">Jun 11, 2018</time></p>
         </header>
         
         
 
-<h2 id="背景">背景</h2>
+<h2 id="介绍">介绍</h2>
 
-<p>从mysql转为pg，对增删改查的语法没太多变化，但<code>预处理</code>还是有些不同</p>
+<p>sort包提供了排序切片和用户自定义数据集的函数</p>
 
-<h3 id="mysql">Mysql</h3>
+<h2 id="使用">使用</h2>
 
-<pre><code class="language-golang">package main
+<p>对struct进行排序</p>
 
-...
-...
+<pre><code class="language-golang">package sort_test
+import (
+    &quot;fmt&quot;
+    &quot;sort&quot;
+)
+type Person struct {
+    Name string
+    Age  int
+}
+func (p Person) String() string {
+    return fmt.Sprintf(&quot;%s: %d&quot;, p.Name, p.Age)
+}
+// ByAge implements sort.Interface for []Person based on
+// the Age field.
+type ByAge []Person
+func (a ByAge) Len() int           { return len(a) }
+func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a ByAge) Less(i, j int) bool { return a[i].Age &lt; a[j].Age }
+func Example() {
+    people := []Person{
+        {&quot;Bob&quot;, 31},
+        {&quot;John&quot;, 42},
+        {&quot;Michael&quot;, 17},
+        {&quot;Jenny&quot;, 26},
+    }
+    fmt.Println(people)
+    sort.Sort(ByAge(people))
+    fmt.Println(people)
+    // Output:
+    // [Bob: 31 John: 42 Michael: 17 Jenny: 26]
+    // [Michael: 17 Jenny: 26 Bob: 31 John: 42]
+}
 
-_stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;)
-
-_stmt.Exec(a1,b1)
-</code></pre>
-
-<h3 id="postgresql">Postgresql</h3>
-
-<pre><code class="language-golang">package main
-
-...
-...
-_stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;)
-_stmt.Exec(a1,b1)
 </code></pre>
 
       </article>
@@ -78,14 +95,14 @@ _stmt.Exec(a1,b1)
     <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/win_vs_unix/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/golang-lib/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">windows VS unix</h2>
-    <p class="card-text">windows 嘛玩意儿？ windows各种坑，编码格式&hellip;</p>
+    <h2 class="card-title">golang标准库笔记</h2>
+    <p class="card-text"> text/template strings strconv sort </p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2017-03-10 310:00">Mar 10, 2017</time></p>
-      <p>#随笔 </p>
+      <p>Posted <time datetime="2018-03-11 311:00">Mar 11, 2018</time></p>
+      <p>#golang </p>
     </div>
   </article>
 </a>

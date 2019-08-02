@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>golang使用prepare操作postgresqlDB &middot; Sq&#39;s blog</title>
+  <title>标准库 &middot; Sq&#39;s blog</title>
   <meta name="description" content="" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -13,6 +13,7 @@
   
   
   <link href="https://songqii.github.io/css/concated.min.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" href="https://songqii.github.io/tags/%E6%A0%87%E5%87%86%E5%BA%93/index.xml" title="Sq's blog" />
   
   <style>
     body {
@@ -21,7 +22,7 @@
   </style>
 </head>
 
-  <body class="single-body">
+  <body class="list-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://songqii.github.io/" class="nav-text">SQ.</a></h1>
   <div class="hamburger-menu">
@@ -37,64 +38,39 @@
   </div>
 </nav>
 
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">golang使用prepare操作postgresqlDB</h1>
-          <p class="post-date">Posted <time datetime="2018-03-10">Mar 10, 2018</time></p>
-        </header>
+    <main class="card-container side-gutter">
+      <header class="list-header">
         
-        
-
-<h2 id="背景">背景</h2>
-
-<p>从mysql转为pg，对增删改查的语法没太多变化，但<code>预处理</code>还是有些不同</p>
-
-<h3 id="mysql">Mysql</h3>
-
-<pre><code class="language-golang">package main
-
-...
-...
-
-_stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;)
-
-_stmt.Exec(a1,b1)
-</code></pre>
-
-<h3 id="postgresql">Postgresql</h3>
-
-<pre><code class="language-golang">package main
-
-...
-...
-_stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;)
-_stmt.Exec(a1,b1)
-</code></pre>
-
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
+        <h1 class="list-header-title">标准库</h1>
+      </header>
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/win_vs_unix/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/golang-lib-sort/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">windows VS unix</h2>
-    <p class="card-text">windows 嘛玩意儿？ windows各种坑，编码格式&hellip;</p>
+    <h2 class="card-title">golang标准库-sort</h2>
+    <p class="card-text">介绍 sort包提供了排序切片和用户自定义数据集的函数
+使用 对struct进行排序
+package sort_test import ( &quot;fmt&quot; &quot;sort&quot; ) type Person struct { Name string Age int } func (p Person) String() string { return fmt.Sprintf(&quot;%s: %d&quot;, p.Name, p.Age) } // ByAge implements sort.Interface for []Person based on // the Age field. type ByAge []Person func (a ByAge) Len() int { return len(a) } func (a ByAge) Swap(i, j int) { a[i], a[j] = a[j], a[i] } func (a ByAge) Less(i, j int) bool { return a[i].</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2017-03-10 310:00">Mar 10, 2017</time></p>
-      <p>#随笔 </p>
+      <p>Posted <time datetime="2018-06-11">Jun 11, 2018</time></p>
+      <p>#golang </p>
+    </div>
+  </article>
+</a><a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://songqii.github.io/posts/golang-lib/" class="card blog-card" rel="bookmark" >
+  
+  <article class="card-body">
+    <h2 class="card-title">golang标准库笔记</h2>
+    <p class="card-text"> text/template strings strconv sort </p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2018-03-11">Mar 11, 2018</time></p>
+      <p>#golang </p>
     </div>
   </article>
 </a>
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/" class="card home-card" style="background-image: url( https://songqii.github.io/img/grey-cloud.jpg )" rel="bookmark" >
-  Home
-</a>
-    </nav>
+    </main>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>

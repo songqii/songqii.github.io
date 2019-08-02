@@ -4,14 +4,21 @@
     <link>https://songqii.github.io/categories/</link>
     <description>Recent content in Categories on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 11 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://songqii.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>golang</title>
+      <link>https://songqii.github.io/categories/golang/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/categories/golang/</guid>
+      <description></description>
+    </item><item>
       <title>随笔</title>
       <link>https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94/</link>
-      <pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
