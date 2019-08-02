@@ -14,8 +14,7 @@
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/golang-lib-sort/</guid>
-      <description>介绍 sort包提供了排序切片和用户自定义数据集的函数
-使用 对struct进行排序
+      <description>介绍  sort包提供了排序切片和用户自定义数据集的函数  使用 对struct进行排序
 package sort_test import ( &amp;quot;fmt&amp;quot; &amp;quot;sort&amp;quot; ) type Person struct { Name string Age int } func (p Person) String() string { return fmt.Sprintf(&amp;quot;%s: %d&amp;quot;, p.Name, p.Age) } // ByAge implements sort.Interface for []Person based on // the Age field. type ByAge []Person func (a ByAge) Len() int { return len(a) } func (a ByAge) Swap(i, j int) { a[i], a[j] = a[j], a[i] } func (a ByAge) Less(i, j int) bool { return a[i].</description>
     </item><item>
       <title>golang标准库笔记</title>
