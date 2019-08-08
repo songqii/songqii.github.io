@@ -1,0 +1,20 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cpu - Sq&#39;s blog</title>
+    <link>https://songqii.github.io/tags/cpu/</link>
+    <description>Recent content in cpu on Sq&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://songqii.github.io/tags/cpu/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>记一次golang爬虫占用CPU过高的处理办法</title>
+      <link>https://songqii.github.io/posts/golang_cpu100/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/golang_cpu100/</guid>
+      <description>Golang程序占用cpu过高</description>
+    </item>
+  </channel>
+</rss>

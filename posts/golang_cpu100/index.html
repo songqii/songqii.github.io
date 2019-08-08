@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Tags &middot; Sq&#39;s blog</title>
-  <meta name="description" content="" />
+  <title>记一次golang爬虫占用CPU过高的处理办法 &middot; Sq&#39;s blog</title>
+  <meta name="description" content="Golang程序占用cpu过高" />
   <link rel="icon" type="image/png" sizes="32x32" href="https://songqii.github.io/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -14,7 +14,6 @@
   
   
   <link href="https://songqii.github.io/css/concated.min.css" rel="stylesheet">
-  <link rel="alternate" type="application/rss+xml" href="https://songqii.github.io/tags/index.xml" title="Sq's blog" />
   
   <style>
     body {
@@ -23,7 +22,7 @@
   </style>
 </head>
 
-  <body class="list-body">
+  <body class="single-body">
     <nav class="nav-bar side-padding">
   <h1 class="nav-header"><a href="https://songqii.github.io/" class="nav-text">SQ.</a></h1>
   <div class="hamburger-menu">
@@ -39,39 +38,69 @@
   </div>
 </nav>
 
-    <main class="card-container side-gutter">
-      <header class="list-header">
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">记一次golang爬虫占用CPU过高的处理办法</h1>
+          <p class="post-date">Posted <time datetime="2018-06-11">Jun 11, 2018</time></p>
+        </header>
         
-        <h1 class="list-header-title">Tags</h1>
-      </header>
+        
+
+<h3 id="背景">背景</h3>
+
+<p>一个爬虫程序，流程是抓取到具体数据存入struct，把struct塞入一个全局channel，单独起一个写成处理入库的事情
+但部署到生产环境后，发现cpu占用100%</p>
+
+<p><img src="https://raw.githubusercontent.com/songqii/songqii.github.io/master/images/golang_cpu.png" alt="avatar" /></p>
+
+<h3 id="本地处理">本地处理</h3>
+
+<p>在程序入口加入一个写成，开启一个端口</p>
+
+<pre><code class="language-golang">go func() {
+		http.ListenAndServe(&quot;127.0.0.1:6060&quot;, nil)
+	}()
+</code></pre>
+
+<p>在本地控制台输入</p>
+
+<pre><code class="language-shell">go tool pprof http://127.0.0.1:6060/debug/pprof/profile
+</code></pre>
+
+<p>pprof蹦出来之后<code>(大概30s的时间，因为需要分析)</code>输入</p>
+
+<pre><code class="language-shell">top10
+</code></pre>
+
+<p>显示cpu占用过高的函数</p>
+
+<h3 id="结果">结果</h3>
+
+<p>根据pprof显示的问题，对具体函数做优化</p>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/tags/spf13-vim/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/golang-lib/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">spf13-vim</h2>
-    <p class="card-text"></p>
+    <h2 class="card-title">golang标准库笔记</h2>
+    <p class="card-text">golang标准库列表</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2012-04-06">Apr 6, 2012</time></p>
-      
-    </div>
-  </article>
-</a><a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/tags/vim/" class="card blog-card" rel="bookmark" >
-  
-  <article class="card-body">
-    <h2 class="card-title">vim</h2>
-    <p class="card-text"></p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2012-04-06">Apr 6, 2012</time></p>
-      
+      <p>Posted <time datetime="2018-03-11 311:00">Mar 11, 2018</time></p>
+      <p>#golang </p>
     </div>
   </article>
 </a>
-    </main>
-    <nav class="pagination-nav side-padding">
-      <a href="https://songqii.github.io/tags/page/2/" class="pagination-newer">&lt; Newer Posts</a>
       
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://songqii.github.io/" class="card home-card" style="background-image: url( https://songqii.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
     </nav>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
