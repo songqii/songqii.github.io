@@ -16,6 +16,13 @@
       <guid>https://songqii.github.io/posts/golang-lib-sort/</guid>
       <description>介绍sort的使用方法</description>
     </item><item>
+      <title>golang标准库-strings</title>
+      <link>https://songqii.github.io/posts/golang-lib-strings/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/golang-lib-strings/</guid>
+      <description>介绍sort的使用方法</description>
+    </item><item>
       <title>记一次golang爬虫占用CPU过高的处理办法</title>
       <link>https://songqii.github.io/posts/golang_cpu100/</link>
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>

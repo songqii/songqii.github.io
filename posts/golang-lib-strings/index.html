@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>golang标准库-sort &middot; Sq&#39;s blog</title>
+  <title>golang标准库-strings &middot; Sq&#39;s blog</title>
   <meta name="description" content="介绍sort的使用方法" />
   <link rel="icon" type="image/png" sizes="32x32" href="https://songqii.github.io/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
@@ -41,54 +41,15 @@
     <main class="content side-text-padding">
       <article class="post dropcase">
         <header class="post-header">
-        	<h1 class="post-title">golang标准库-sort</h1>
+        	<h1 class="post-title">golang标准库-strings</h1>
           <p class="post-date">Posted <time datetime="2018-06-11">Jun 11, 2018</time></p>
         </header>
         
         
 
-<h2 id="介绍">介绍</h2>
+<h3 id="字符串替换">字符串替换</h3>
 
-<p>sort包提供了排序切片和用户自定义数据集的函数</p>
-
-<h2 id="使用">使用</h2>
-
-<p>对struct进行排序</p>
-
-<pre><code class="language-golang">package sort_test
-import (
-    &quot;fmt&quot;
-    &quot;sort&quot;
-)
-type Person struct {
-    Name string
-    Age  int
-}
-func (p Person) String() string {
-    return fmt.Sprintf(&quot;%s: %d&quot;, p.Name, p.Age)
-}
-// ByAge implements sort.Interface for []Person based on
-// the Age field.
-type ByAge []Person
-func (a ByAge) Len() int           { return len(a) }
-func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
-func (a ByAge) Less(i, j int) bool { return a[i].Age &lt; a[j].Age }
-func Example() {
-    people := []Person{
-        {&quot;Bob&quot;, 31},
-        {&quot;John&quot;, 42},
-        {&quot;Michael&quot;, 17},
-        {&quot;Jenny&quot;, 26},
-    }
-    fmt.Println(people)
-    sort.Sort(ByAge(people))
-    fmt.Println(people)
-    // Output:
-    // [Bob: 31 John: 42 Michael: 17 Jenny: 26]
-    // [Michael: 17 Jenny: 26 Bob: 31 John: 42]
-}
-
-</code></pre>
+<p>strings.replace(源字符串, 需要替换的字符串, 替换后的字符串, -1)</p>
 
       </article>
       
@@ -96,11 +57,11 @@ func Example() {
     <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/golang-lib-strings/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/golang_cpu100/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">golang标准库-strings</h2>
-    <p class="card-text">介绍sort的使用方法</p>
+    <h2 class="card-title">记一次golang爬虫占用CPU过高的处理办法</h2>
+    <p class="card-text">Golang程序占用cpu过高</p>
     <div class="card-subtext muted-text">
       <p>Posted <time datetime="2018-06-11 611:00">Jun 11, 2018</time></p>
       <p>#golang </p>
