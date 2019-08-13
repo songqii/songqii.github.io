@@ -59,19 +59,15 @@
 
 <h3 id="步骤">步骤</h3>
 
-<ol>
-<li>安装磁盘工具</li>
-</ol>
+<p>1.安装磁盘工具</p>
 
 <pre><code class="language-shell">yum install cloud-utils-growpart
 yum install xfsprogs
 
 </code></pre>
 
-<ol>
-<li>查看现有云盘大小
-&gt;在购买后磁盘大小为85G，记录好磁盘挂在信息<br /></li>
-</ol>
+<p>2.查看现有云盘大小
+&gt;在购买后磁盘大小为85G，记录好磁盘挂在信息</p>
 
 <p>[root@&hellip; ~]# fdisk -l<br />
 磁盘 <code>/dev/vda</code>：85.9 GB, 85899345920 字节，167772160 个扇区<br />
@@ -84,10 +80,8 @@ I/O 大小(最小/最佳)：512 字节 / 512 字节<br />
 <p>设备        Boot      Start    End        Blocks    Id     System<br />
 /dev/vda1   *        2048    83884031    41940992   83  Linux</p>
 
-<ol>
-<li>查看云盘分区大小<br />
-&gt; 当前40G</li>
-</ol>
+<p>3.查看云盘分区大小<br />
+&gt; 当前40G</p>
 
 <p>[root@&hellip; ~]# df -h<br />
 文件系统        容量  已用  可用 已用% 挂载点<br />
@@ -98,26 +92,22 @@ tmpfs           1.9G  632K  1.9G    1% /run<br />
 tmpfs           1.9G     0  1.9G    0% /sys/fs/cgroup<br />
 tmpfs           380M     0  380M    0% /run/user/0</p>
 
-<ol>
-<li>运行<code>growpart</code><br />
-&gt; growpart <code>参数1:要扩容的云盘, 参数2:第几个分区</code></li>
-</ol>
+<p>4.运行<code>growpart</code><br />
+&gt; growpart <code>参数1:要扩容的云盘, 参数2:第几个分区</code></p>
 
 <p>[root@ecshost ~]# growpart /dev/vda 1</p>
 
 <p><strong>报错了。。。</strong><br />
 <strong>unexpected output in sfdisk &ndash;version [sfdisk，来自 util-linux 2.23.2]</strong></p>
 
-<p>解决办法:
+<p>解决办法:<br />
 由于语言问题，导致报错，设置lang值为英文后解决<br />
 [root@ecshost ~]#LANG=en_US.UTF-8</p>
 
-<ol>
-<li>运行<code>resize2fs</code><br />
-<code>shell
-resize2fs /dev/vda1
-</code></li>
-</ol>
+<p>5.运行<code>resize2fs</code></p>
+
+<pre><code class="language-shell">resize2fs /dev/vda1
+</code></pre>
 
       </article>
       
