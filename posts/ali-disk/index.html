@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>golang使用prepare操作postgresqlDB &middot; Sq&#39;s blog</title>
-  <meta name="description" content="" />
+  <title>阿里云扩容 &middot; Sq&#39;s blog</title>
+  <meta name="description" content="阿里云磁盘扩容backup" />
   <link rel="icon" type="image/png" sizes="32x32" href="https://songqii.github.io/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -41,37 +41,83 @@
     <main class="content side-text-padding">
       <article class="post dropcase">
         <header class="post-header">
-        	<h1 class="post-title">golang使用prepare操作postgresqlDB</h1>
-          <p class="post-date">Posted <time datetime="2018-03-10">Mar 10, 2018</time></p>
+        	<h1 class="post-title">阿里云扩容</h1>
+          <p class="post-date">Posted <time datetime="2018-07-11">Jul 11, 2018</time></p>
         </header>
         
         
 
-<h2 id="背景">背景</h2>
+<h3 id="背景">背景</h3>
 
-<p>从mysql转为pg，对增删改查的语法没太多变化，但<code>预处理</code>还是有些不同</p>
+<p>在阿里云的服务器快满的时候，购买了磁盘扩容服务，虽然不用重启，但是需要自己分区</p>
 
-<h3 id="mysql">Mysql</h3>
+<h3 id="系统">系统</h3>
 
-<pre><code class="language-golang">package main
+<p>操作系统：Centos7</p>
 
-...
-...
+<p>内核版本：3.10.0</p>
 
-_stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;)
+<h3 id="步骤">步骤</h3>
 
-_stmt.Exec(a1,b1)
+<ol>
+<li>安装磁盘工具</li>
+</ol>
+
+<pre><code class="language-shell">yum install cloud-utils-growpart
+yum install xfsprogs
+
 </code></pre>
 
-<h3 id="postgresql">Postgresql</h3>
+<ol>
+<li>查看现有云盘大小
+&gt;在购买后磁盘大小为85G，记录好磁盘挂在信息<br /></li>
+</ol>
 
-<pre><code class="language-golang">package main
+<p>[root@&hellip; ~]# fdisk -l<br />
+磁盘 <code>/dev/vda</code>：85.9 GB, 85899345920 字节，167772160 个扇区<br />
+Units = 扇区 of 1 * 512 = 512 bytes<br />
+扇区大小(逻辑/物理)：512 字节 / 512 字节<br />
+I/O 大小(最小/最佳)：512 字节 / 512 字节<br />
+磁盘标签类型：dos<br />
+磁盘标识符：0x0008d73a</p>
 
-...
-...
-_stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;)
-_stmt.Exec(a1,b1)
-</code></pre>
+<p>设备        Boot      Start    End        Blocks    Id     System<br />
+/dev/vda1   *        2048    83884031    41940992   83  Linux</p>
+
+<ol>
+<li>查看云盘分区大小<br />
+&gt; 当前40G</li>
+</ol>
+
+<p>[root@&hellip; ~]# df -h<br />
+文件系统        容量  已用  可用 已用% 挂载点<br />
+/dev/vda1        40G   19G   19G   51% /<br />
+devtmpfs        1.9G     0  1.9G    0% /dev<br />
+tmpfs           1.9G     0  1.9G    0% /dev/shm<br />
+tmpfs           1.9G  632K  1.9G    1% /run<br />
+tmpfs           1.9G     0  1.9G    0% /sys/fs/cgroup<br />
+tmpfs           380M     0  380M    0% /run/user/0</p>
+
+<ol>
+<li>运行<code>growpart</code><br />
+&gt; growpart <code>参数1:要扩容的云盘, 参数2:第几个分区</code></li>
+</ol>
+
+<p>[root@ecshost ~]# growpart /dev/vda 1</p>
+
+<p><strong>报错了。。。</strong><br />
+<strong>unexpected output in sfdisk &ndash;version [sfdisk，来自 util-linux 2.23.2]</strong></p>
+
+<p>解决办法:
+由于语言问题，导致报错，设置lang值为英文后解决<br />
+[root@ecshost ~]#LANG=en_US.UTF-8</p>
+
+<ol>
+<li>运行<code>resize2fs</code><br />
+<code>shell
+resize2fs /dev/vda1
+</code></li>
+</ol>
 
       </article>
       
@@ -79,14 +125,14 @@ _stmt.Exec(a1,b1)
     <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/win_vs_unix/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/golang-lib-sort/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">windows VS unix</h2>
-    <p class="card-text">windows 嘛玩意儿？ windows各种坑，编码格式&hellip;</p>
+    <h2 class="card-title">golang标准库-sort</h2>
+    <p class="card-text">介绍sort的使用方法</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2017-03-10 310:00">Mar 10, 2017</time></p>
-      <p>#随笔 </p>
+      <p>Posted <time datetime="2018-06-11 611:00">Jun 11, 2018</time></p>
+      <p>#golang </p>
     </div>
   </article>
 </a>

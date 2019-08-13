@@ -4,11 +4,18 @@
     <link>https://songqii.github.io/tags/</link>
     <description>Recent content in Tags on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://songqii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>linux</title>
+      <link>https://songqii.github.io/tags/linux/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/linux/</guid>
+      <description></description>
+    </item><item>
       <title>cpu</title>
       <link>https://songqii.github.io/tags/cpu/</link>
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
@@ -49,13 +56,6 @@
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/unix/</guid>
-      <description></description>
-    </item><item>
-      <title>windows</title>
-      <link>https://songqii.github.io/tags/windows/</link>
-      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/windows/</guid>
       <description></description>
     </item>
   </channel>
