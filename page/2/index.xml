@@ -9,6 +9,15 @@
         <atom:link href="https://songqii.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>MongoDB的索引</title>
+      <link>https://songqii.github.io/posts/mongo-index/</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/mongo-index/</guid>
+      <description>在MongoDB中创建唯一索引 百度了下，发现普遍文章都在用ensureIndex，在本地怎么试也不行，没办法只能看官网文档
+官网说：
+Deprecated since version 3.0.0: db.collection.ensureIndex() is now an alias for db.collection.createIndex()  尼玛ensureIndex已经被废弃了，应该这样使用： &amp;gt;db.表.createIndex({字段名:1},{unique:true})</description>
+    </item><item>
       <title>Flutter是什么</title>
       <link>https://songqii.github.io/posts/flutter/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>

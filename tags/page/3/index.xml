@@ -9,6 +9,20 @@
         <atom:link href="https://songqii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>jekyll</title>
+      <link>https://songqii.github.io/tags/jekyll/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/jekyll/</guid>
+      <description></description>
+    </item><item>
+      <title>.vimrc</title>
+      <link>https://songqii.github.io/tags/.vimrc/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/.vimrc/</guid>
+      <description></description>
+    </item><item>
       <title>plugins</title>
       <link>https://songqii.github.io/tags/plugins/</link>
       <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>

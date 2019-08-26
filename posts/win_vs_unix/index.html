@@ -32,7 +32,7 @@
     </button>
     <ul id="menu" class="hamburger-menu-overlay">
       <li><a href="https://songqii.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://songqii.github.io/categories/golang" class="hamburger-menu-overlay-link">Golang</a></li><li><a href="https://songqii.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94" class="hamburger-menu-overlay-link">随笔</a></li>
+      <li><a href="https://songqii.github.io/categories/golang" class="hamburger-menu-overlay-link">Golang</a></li><li><a href="https://songqii.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://songqii.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93" class="hamburger-menu-overlay-link">数据库</a></li><li><a href="https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94" class="hamburger-menu-overlay-link">随笔</a></li>
       
     </ul>
   </div>
@@ -58,14 +58,16 @@
     <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/flutter/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/mongo-index/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">Flutter是什么</h2>
-    <p class="card-text"> Flutter是什么 又来一个dart IDE Demo </p>
+    <h2 class="card-title">MongoDB的索引</h2>
+    <p class="card-text">在MongoDB中创建唯一索引 百度了下，发现普遍文章都在用ensureIndex，在本地怎么试也不行，没办法只能看官网文档
+官网说：
+Deprecated since version 3.0.0: db.collection.ensureIndex() is now an alias for db.collection.createIndex()  尼玛ensureIndex已经被废弃了，应该这样使用： &gt;db.表.createIndex({字段名:1},{unique:true})</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2016-03-10 310:00">Mar 10, 2016</time></p>
-      <p>#随笔 </p>
+      <p>Posted <time datetime="2016-03-11 311:00">Mar 11, 2016</time></p>
+      <p>#数据库 </p>
     </div>
   </article>
 </a>

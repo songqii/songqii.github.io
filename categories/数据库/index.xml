@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据库 - Sq&#39;s blog</title>
+    <link>https://songqii.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+    <description>Recent content in 数据库 on Sq&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 11 Mar 2016 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://songqii.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>MongoDB的索引</title>
+      <link>https://songqii.github.io/posts/mongo-index/</link>
+      <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/mongo-index/</guid>
+      <description>在MongoDB中创建唯一索引 百度了下，发现普遍文章都在用ensureIndex，在本地怎么试也不行，没办法只能看官网文档
+官网说：
+Deprecated since version 3.0.0: db.collection.ensureIndex() is now an alias for db.collection.createIndex()  尼玛ensureIndex已经被废弃了，应该这样使用： &amp;gt;db.表.createIndex({字段名:1},{unique:true})</description>
+    </item>
+  </channel>
+</rss>
