@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>MongoDB的索引 &middot; Sq&#39;s blog</title>
-  <meta name="description" content="" />
+  <meta name="description" content="mongodb的索引建立" />
   <link rel="icon" type="image/png" sizes="32x32" href="https://songqii.github.io/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -53,10 +53,12 @@
 
 <p>官网说：</p>
 
-<pre><code class="language-shell">Deprecated since version 3.0.0: db.collection.ensureIndex() is now an alias for db.collection.createIndex()
+<pre><code class="language-shell">Deprecated since version 3.0.0:   
+db.collection.ensureIndex() is now an alias for   
+db.collection.createIndex()  
 </code></pre>
 
-<p>尼玛ensureIndex已经被废弃了，应该这样使用：
+<p>尼玛ensureIndex已经被废弃了，应该这样使用：<br />
 &gt;db.表.createIndex({字段名:1},{unique:true})</p>
 
       </article>
