@@ -5,37 +5,56 @@
   <url>
     <loc>https://songqii.github.io/categories/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/posts/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/tags/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/categories/linux/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/linux/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/linux/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/mongodb/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/mysql/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/explain_for_db/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/pg/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -46,19 +65,16 @@
   <url>
     <loc>https://songqii.github.io/tags/cpu/</loc>
     <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/categories/golang/</loc>
-    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/golang/</loc>
     <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/golang/</loc>
+    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -74,7 +90,6 @@
   <url>
     <loc>https://songqii.github.io/tags/%E6%A0%87%E5%87%86%E5%BA%93/</loc>
     <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -95,25 +110,21 @@
   <url>
     <loc>https://songqii.github.io/tags/postgresql/</loc>
     <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/prepare/</loc>
     <lastmod>2018-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/unix/</loc>
     <lastmod>2017-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/windows/</loc>
     <lastmod>2017-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -124,19 +135,11 @@
   <url>
     <loc>https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2017-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/index/</loc>
     <lastmod>2016-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/tags/mongodb/</loc>
-    <lastmod>2016-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -145,15 +148,13 @@
   </url>
   
   <url>
-    <loc>https://songqii.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
-    <lastmod>2016-03-11T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://songqii.github.io/tags/dart/</loc>
+    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/flutter/</loc>
     <lastmod>2016-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -162,27 +163,18 @@
   </url>
   
   <url>
-    <loc>https://songqii.github.io/tags/dart/</loc>
-    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://songqii.github.io/tags/google/</loc>
     <lastmod>2016-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/hugo/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -198,25 +190,21 @@
   <url>
     <loc>https://songqii.github.io/tags/.vimrc/</loc>
     <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/plugins/</loc>
     <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/spf13-vim/</loc>
     <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/vim/</loc>
     <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

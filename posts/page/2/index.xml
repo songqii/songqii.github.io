@@ -9,6 +9,13 @@
         <atom:link href="https://songqii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>windows VS unix</title>
+      <link>https://songqii.github.io/posts/win_vs_unix/</link>
+      <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/win_vs_unix/</guid>
+      <description>windows 嘛玩意儿？ windows各种坑，编码格式&amp;hellip;</description>
+    </item><item>
       <title>MongoDB的索引</title>
       <link>https://songqii.github.io/posts/mongo-index/</link>
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>

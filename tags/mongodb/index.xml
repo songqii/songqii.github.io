@@ -1,14 +1,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MongoDB - Sq&#39;s blog</title>
+    <title>mongoDB - Sq&#39;s blog</title>
     <link>https://songqii.github.io/tags/mongodb/</link>
-    <description>Recent content in MongoDB on Sq&#39;s blog</description>
+    <description>Recent content in mongoDB on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Mar 2016 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://songqii.github.io/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>mysql的explain、pg的explain、mongo的explain</title>
+      <link>https://songqii.github.io/posts/explain_for_db/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/explain_for_db/</guid>
+      <description>各种数据库的explain使用方法</description>
+    </item><item>
       <title>MongoDB的索引</title>
       <link>https://songqii.github.io/posts/mongo-index/</link>
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
