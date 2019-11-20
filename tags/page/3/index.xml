@@ -4,11 +4,18 @@
     <link>https://songqii.github.io/tags/</link>
     <description>Recent content in Tags on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://songqii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Flutter</title>
+      <link>https://songqii.github.io/tags/flutter/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/flutter/</guid>
+      <description></description>
+    </item><item>
       <title>google</title>
       <link>https://songqii.github.io/tags/google/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
@@ -49,13 +56,6 @@
       <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/spf13-vim/</guid>
-      <description></description>
-    </item><item>
-      <title>vim</title>
-      <link>https://songqii.github.io/tags/vim/</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/vim/</guid>
       <description></description>
     </item>
   </channel>

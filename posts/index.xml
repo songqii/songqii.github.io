@@ -4,11 +4,18 @@
     <link>https://songqii.github.io/posts/</link>
     <description>Recent content in Posts on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Apr 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://songqii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>AxureRP 9 激活码</title>
+      <link>https://songqii.github.io/posts/axure/</link>
+      <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/axure/</guid>
+      <description>AxureRP 9 激活码</description>
+    </item><item>
       <title>mysql的explain、pg的explain、mongo的explain</title>
       <link>https://songqii.github.io/posts/explain_for_db/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
@@ -50,14 +57,6 @@
       
       <guid>https://songqii.github.io/posts/golang-lib/</guid>
       <description>golang标准库列表</description>
-    </item><item>
-      <title>golang使用prepare操作postgresqlDB</title>
-      <link>https://songqii.github.io/posts/golang-postgresql-prepare/</link>
-      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/golang-postgresql-prepare/</guid>
-      <description> 背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
-Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=? AND b=?&amp;quot;) _stmt.Exec(a1,b1)  Postgresql package main ... ... _stmt,_:=pg.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=$1 AND b=$2&amp;quot;) _stmt.Exec(a1,b1)  </description>
     </item>
   </channel>
 </rss>
