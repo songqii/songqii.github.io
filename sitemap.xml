@@ -3,27 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://songqii.github.io/posts/axure/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>https://songqii.github.io/categories/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://songqii.github.io/categories/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>https://songqii.github.io/tags/golang/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/golang/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/go1.13/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://songqii.github.io/posts/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://songqii.github.io/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://songqii.github.io/tags/</loc>
+    <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/axure/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
   </url>
   
@@ -38,12 +53,12 @@
   </url>
   
   <url>
-    <loc>https://songqii.github.io/categories/linux/</loc>
+    <loc>https://songqii.github.io/tags/linux/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://songqii.github.io/tags/linux/</loc>
+    <loc>https://songqii.github.io/categories/linux/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -79,16 +94,6 @@
   
   <url>
     <loc>https://songqii.github.io/tags/cpu/</loc>
-    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/tags/golang/</loc>
-    <lastmod>2018-06-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/categories/golang/</loc>
     <lastmod>2018-06-11T00:00:00+00:00</lastmod>
   </url>
   

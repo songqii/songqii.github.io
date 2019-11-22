@@ -4,11 +4,23 @@
     <link>https://songqii.github.io/categories/golang/</link>
     <description>Recent content in golang on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Oct 2019 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="https://songqii.github.io/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>golang1.13 配置env </title>
+      <link>https://songqii.github.io/posts/go1.13/</link>
+      <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/go1.13/</guid>
+      <description>golang1.13版本新出了 GOPRIVATE, GOSUMDB
+这个需要配置下
+不进行包校验
+go env -w GOSUMDB=off  不使用goproxy拉取的地址
+go env -w GOPRIVATE=*.your-doamin.com  设置代理
+go env -w GOPROXY=https://goproxy.io,direct  这样拉取公司的私有代码将不走proxy</description>
+    </item><item>
       <title>golang标准库-sort</title>
       <link>https://songqii.github.io/posts/golang-lib-sort/</link>
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
