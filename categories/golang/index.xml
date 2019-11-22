@@ -14,12 +14,7 @@
       <pubDate>Thu, 10 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/go1.13/</guid>
-      <description>golang1.13版本新出了 GOPRIVATE, GOSUMDB
-这个需要配置下
-不进行包校验
-go env -w GOSUMDB=off  不使用goproxy拉取的地址
-go env -w GOPRIVATE=*.your-doamin.com  设置代理
-go env -w GOPROXY=https://goproxy.io,direct  这样拉取公司的私有代码将不走proxy</description>
+      <description>如何设置 GOPRIVATE 和 GOSUMDB</description>
     </item><item>
       <title>golang标准库-sort</title>
       <link>https://songqii.github.io/posts/golang-lib-sort/</link>
