@@ -1,8 +1,8 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux - Sq&#39;s blog</title>
+    <title>Linux - Sq&#39;s blog</title>
     <link>https://songqii.github.io/categories/linux/</link>
-    <description>Recent content in linux on Sq&#39;s blog</description>
+    <description>Recent content in Linux on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
     
@@ -15,6 +15,13 @@
       
       <guid>https://songqii.github.io/posts/ali-disk/</guid>
       <description>阿里云磁盘扩容backup</description>
+    </item><item>
+      <title>在地址栏输入URL回车到页面出现，整个过程发生了什么？</title>
+      <link>https://songqii.github.io/posts/what_happend/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/what_happend/</guid>
+      <description>从浏览器输入URL到页面呈现，背后涉及到的动作知识点非常多</description>
     </item>
   </channel>
 </rss>

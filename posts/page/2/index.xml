@@ -24,6 +24,13 @@
       <description> 背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
 Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=? AND b=?&amp;quot;) _stmt.Exec(a1,b1)  Postgresql package main ... ... _stmt,_:=pg.db.Prepare(&amp;quot;SELECT * FROM table WHERE a=$1 AND b=$2&amp;quot;) _stmt.Exec(a1,b1)  </description>
     </item><item>
+      <title>在地址栏输入URL回车到页面出现，整个过程发生了什么？</title>
+      <link>https://songqii.github.io/posts/what_happend/</link>
+      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/what_happend/</guid>
+      <description>从浏览器输入URL到页面呈现，背后涉及到的动作知识点非常多</description>
+    </item><item>
       <title>windows VS unix</title>
       <link>https://songqii.github.io/posts/win_vs_unix/</link>
       <pubDate>Fri, 10 Mar 2017 00:00:00 +0000</pubDate>
@@ -51,17 +58,6 @@ Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;quot;SELECT * FROM tab
       
       <guid>https://songqii.github.io/posts/just2/</guid>
       <description> 只做第二，挺好
- </description>
-    </item><item>
-      <title>话说hugo和markdown</title>
-      <link>https://songqii.github.io/posts/my-first-post/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/my-first-post/</guid>
-      <description> 希望自己的博客可以有更多有用的东西 关于Hugo golang编写的静态网站生成工具，和jekyll类似
-markdown语法 这段文字将被高亮显示&amp;hellip;
-标记下重点: Happy day
-func main(){ fmt.Println(&amp;quot;http://blog.songqi.me&amp;quot;) }   这是引用的内容
  </description>
     </item>
   </channel>

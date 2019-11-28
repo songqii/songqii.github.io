@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>在地址栏输入URL回车到页面出现，整个过程发生了什么？ &middot; Sq&#39;s blog</title>
+  <meta name="description" content="从浏览器输入URL到页面呈现，背后涉及到的动作知识点非常多" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  
+  
+  
+  
+  
+  <link href="https://songqii.github.io/css/concated.min.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background: #ecedef url("https://songqii.github.io/img/ignasi_pattern_s.png") repeat;
+    }
+  </style>
+
+
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+
+<script>
+    L2Dwidget.init({
+        "model": {
+            jsonPath: "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "right",
+            "width": 150,
+            "height": 300,
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": true,
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
+
+</head>
+
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://songqii.github.io/" class="nav-text">SQ.</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://songqii.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li><a href="https://songqii.github.io/categories/golang" class="hamburger-menu-overlay-link">Golang</a></li><li><a href="https://songqii.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://songqii.github.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93" class="hamburger-menu-overlay-link">数据库</a></li><li><a href="https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94" class="hamburger-menu-overlay-link">随笔</a></li>
+      
+    </ul>
+  </div>
+</nav>
+
+    <main class="content side-text-padding">
+      <article class="post dropcase">
+        <header class="post-header">
+        	<h1 class="post-title">在地址栏输入URL回车到页面出现，整个过程发生了什么？</h1>
+          <p class="post-date">Posted <time datetime="2017-03-22">Mar 22, 2017</time></p>
+        </header>
+        
+        
+
+<p>从浏览器输入URL到页面呈现，背后涉及到的动作知识点非常多，我们本着先整体再局部的原则，先把这个过程大致分为以下几个主过程</p>
+
+<h3 id="1-dns寻址">1.DNS寻址</h3>
+
+<p>我们通常在浏览器数地址栏输入的URL是域名，而不是直接输入IP地址（虽然也可以这么做 ），但之前也讲过，在茫茫的网络大海中，标识服务器的并不是人类比较容易辨识的域名，而是IP地址，所以宏观角度来说，当我们输入URL并且提交的时候，第一步就是根据域名寻找目标服务器的IP地址，这个过程就是DNS域名解析。</p>
+
+<p>微观角度来看，为提高效率，DNS域名解析是有层次的，具体原则就是就近原则。</p>
+
+<p>首先，本地电脑会将一些经常使用的域名与响应的IP地址建立一个映射关系，并保存在系统文件hosts里。所以正常情况下，在进行DNS解析的时候，系统会优先从hosts文件中寻找对应的IP地址，如果找到就直接使用hosts文件里面的IP地址，毕竟这是最快的。</p>
+
+<p>其次，如果本地hosts文件里没有这个域名一起对应的IP地址映射，那么就求助于本地DNS服务器，大概就是系统向本地DNS服务器发送请求去查询域名对应的IP地址，本地DNS服务器响应请求，找到IP地址并将结果（IP地址）返回给浏览器。</p>
+
+<p>然后，如果本地DNS服务器没有找到对应的IP地址，本地DNS服务器会层层向上一级的DNS服务器发送请求，直至DNS根服务器。如果找到的话，就会进行回传，最终把找到的IP地址返回给浏览器。</p>
+
+<p>以上不管是本地hosts文件还是本地DNS或者更高一级的DNS服务器，甚至到根DNS服务器，其目的就只有一个：就是域名的解析必须要有一个结果，要么有IP地址，要么就是没有。没有的话，可能是域名错误或者该域名尚未进行解析，这个就不在讨论范围之内了。</p>
+
+<h3 id="2-建立连接">2.建立连接</h3>
+
+<p>通过第一步或得域名对应的IP地址后，我们就可以在茫茫网海中找到目标服务器，但是找到之后并不是迫不及待的要找人家要东西，要东西之前先得把传输通道连起来，这个就是建立连接。这个过程就是著名的TCP三次握手。</p>
+
+<p>第一次握手：主机A发送位码为syn＝1,随机产生seq number=x的数据包到服务器，客户端进入SYN_SEND状态，等待服务器的确认；主机B由SYN=1知道，A要求建立联机；</p>
+
+<p>第二次握手：主机B收到请求后要确认联机信息，向A发送ack number(主机A的seq+1),syn=1,ack=1,随机产生seq=y的包，此时服务器进入SYN_RECV状态；</p>
+
+<p>第三次握手：主机A收到后检查ack number是否正确，即第一次发送的seq number+1,以及位码ack是否为1，若正确，主机A会再发送ack number(主机B的seq+1),ack=1，主机B收到后确认seq值与ack=1则连接建立成功。客户端和服务器端都进入ESTABLISHED状态。</p>
+
+<p><img src="./resources/tcp.png" alt="tcp" /></p>
+
+<h3 id="3-发送请求">3.发送请求</h3>
+
+<p>建立起连接之后，双方就可以开始传输数据，进行“沟通”了。首先，在请求报文中，还必须明确请求的端口是哪个，还要确认一下端口，HTTP协议默认端口是80端口。然后浏览器向服务器发送请求，这个过程涉及到上一篇提到的四层网络模型。从应用层开始，消息以HTTP请求报文的形式，在传输层、网络层、数据链路层逐层打上头部，进行传输，在服务器端接收数据的时候，再逐层解套，最终接收到HTTP协议的请求报文。</p>
+
+<p>这一块比较细，敞开来讲太多了。总之四层模型的机制保证了请求报文正确完整地发送到服务器端。</p>
+
+<h3 id="4-处理并回传">4.处理并回传</h3>
+
+<p>服务器端接收到请求报文，就会根据请求报文提供的要求，比如端口，参数之类的，去执行响应的操作，并将执行结果以响应报文的形式回传给浏览器。至于这个响应的操作，如果请求的是静态资源，现成的，那就直接回传，如果请求的资源需要动态生成，则web服务器就会调用不同的程序和调用数据库生成最终的HTML文件，再回传给浏览器。</p>
+
+<h3 id="5-接受并渲染">5.接受并渲染</h3>
+
+<p>同样经过层层的增加头部和去除头部，浏览器最终得到服务器返回的HTML数据，这个时候浏览器就会加载数据，根据内容开始渲染页面，数据加载完成就会触发onload的事件。</p>
+
+<p>浏览器会会根据响应的内容，来处理响应。如果响应可缓存，浏览器将把响应存入缓存。</p>
+
+<p>需要注意的时候，第一次浏览器获得的是HTML文件，但是HTML文件如果继续有新资源的请求，那么就会建立新的连接，跟刚刚的过程一样。比如外部的css,js，图片等文件。</p>
+
+<p>至于浏览器如何根据HTML、CSS、JS构建树，渲染页面，以及如重绘（重新绘制和部分重绘），以及这个涉及到之前讲的浏览器的工作原理，这个过程就不细讲了。</p>
+
+<h3 id="6-释放连接">6.释放连接</h3>
+
+<p>之前讲过TCP连接是无状态的，也就是一次性的，不会永久保存这个状态，所以双方完成一次数据的传输之后，如果没有持续的请求，那就要释放连接。</p>
+
+<p>但是连接的释放也不是说断就断，而且相比三次握手建立TCP连接，TCP连接的释放需要四次挥手。需要注意的是连接是首先要客户端浏览器发起，但要释放连接，客户端和服务器端都可以发起关闭请求。之所以要四次握手，还是要确认双方都确实完成各自的工作，防止有文件还没传完就断开的连接。</p>
+
+<h2 id="简单总结来说">简单总结来说：</h2>
+
+<blockquote>
+<p>1.查看缓存（浏览器缓存，系统缓存，路由器缓存），如果有直接访问</p>
+
+<p>2.如果没有，DNS服务器进行域名解析，解析成ip地址</p>
+
+<p>3.通过ip地址找到服务器，进行TCP链接，完成三次握手</p>
+
+<p>4.浏览器像服务器发送http请求</p>
+
+<p>5.服务器响应，将响应报文通过TCP发送回浏览器</p>
+
+<p>6.对响应进行解码，根据资源类型决定如何处理</p>
+
+<p>7.如果是HTML文档，则构建DOM树，下载CSS，JS资源，构建渲染树，布局，绘制</p>
+</blockquote>
+
+      </article>
+      
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://songqii.github.io/posts/win_vs_unix/" class="card blog-card" rel="bookmark" >
+  
+  <article class="card-body">
+    <h2 class="card-title">windows VS unix</h2>
+    <p class="card-text">windows 嘛玩意儿？ windows各种坑，编码格式&hellip;</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2017-03-10 310:00">Mar 10, 2017</time></p>
+      <p>#随笔 </p>
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://songqii.github.io/" class="card home-card" style="background-image: url( https://songqii.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+  
+  <script src="https://songqii.github.io/js/core.min.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+  </body>
+</html>
