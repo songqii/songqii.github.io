@@ -73,51 +73,44 @@
           <p class="post-date">Posted <time datetime="2018-06-11">Jun 11, 2018</time></p>
         </header>
         
-        
-
-<h2 id="介绍">介绍</h2>
-
+        <h2 id="heading">介绍</h2>
 <p>sort包提供了排序切片和用户自定义数据集的函数</p>
-
-<h2 id="使用">使用</h2>
-
+<h2 id="heading-1">使用</h2>
 <p>对struct进行排序</p>
-
-<pre><code class="language-golang">package sort_test
-import (
-    &quot;fmt&quot;
-    &quot;sort&quot;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">sort_test</span>
+<span style="color:#f92672">import</span> (
+    <span style="color:#e6db74">&#34;fmt&#34;</span>
+    <span style="color:#e6db74">&#34;sort&#34;</span>
 )
-type Person struct {
-    Name string
-    Age  int
+<span style="color:#66d9ef">type</span> <span style="color:#a6e22e">Person</span> <span style="color:#66d9ef">struct</span> {
+    <span style="color:#a6e22e">Name</span> <span style="color:#66d9ef">string</span>
+    <span style="color:#a6e22e">Age</span>  <span style="color:#66d9ef">int</span>
 }
-func (p Person) String() string {
-    return fmt.Sprintf(&quot;%s: %d&quot;, p.Name, p.Age)
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">p</span> <span style="color:#a6e22e">Person</span>) <span style="color:#a6e22e">String</span>() <span style="color:#66d9ef">string</span> {
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Sprintf</span>(<span style="color:#e6db74">&#34;%s: %d&#34;</span>, <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">Name</span>, <span style="color:#a6e22e">p</span>.<span style="color:#a6e22e">Age</span>)
 }
-// ByAge implements sort.Interface for []Person based on
-// the Age field.
-type ByAge []Person
-func (a ByAge) Len() int           { return len(a) }
-func (a ByAge) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
-func (a ByAge) Less(i, j int) bool { return a[i].Age &lt; a[j].Age }
-func Example() {
-    people := []Person{
-        {&quot;Bob&quot;, 31},
-        {&quot;John&quot;, 42},
-        {&quot;Michael&quot;, 17},
-        {&quot;Jenny&quot;, 26},
+<span style="color:#75715e">// ByAge implements sort.Interface for []Person based on
+</span><span style="color:#75715e"></span><span style="color:#75715e">// the Age field.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">type</span> <span style="color:#a6e22e">ByAge</span> []<span style="color:#a6e22e">Person</span>
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">a</span> <span style="color:#a6e22e">ByAge</span>) <span style="color:#a6e22e">Len</span>() <span style="color:#66d9ef">int</span>           { <span style="color:#66d9ef">return</span> len(<span style="color:#a6e22e">a</span>) }
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">a</span> <span style="color:#a6e22e">ByAge</span>) <span style="color:#a6e22e">Swap</span>(<span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">j</span> <span style="color:#66d9ef">int</span>)      { <span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">i</span>], <span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">j</span>] = <span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">j</span>], <span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">i</span>] }
+<span style="color:#66d9ef">func</span> (<span style="color:#a6e22e">a</span> <span style="color:#a6e22e">ByAge</span>) <span style="color:#a6e22e">Less</span>(<span style="color:#a6e22e">i</span>, <span style="color:#a6e22e">j</span> <span style="color:#66d9ef">int</span>) <span style="color:#66d9ef">bool</span> { <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">i</span>].<span style="color:#a6e22e">Age</span> &lt; <span style="color:#a6e22e">a</span>[<span style="color:#a6e22e">j</span>].<span style="color:#a6e22e">Age</span> }
+<span style="color:#66d9ef">func</span> <span style="color:#a6e22e">Example</span>() {
+    <span style="color:#a6e22e">people</span> <span style="color:#f92672">:=</span> []<span style="color:#a6e22e">Person</span>{
+        {<span style="color:#e6db74">&#34;Bob&#34;</span>, <span style="color:#ae81ff">31</span>},
+        {<span style="color:#e6db74">&#34;John&#34;</span>, <span style="color:#ae81ff">42</span>},
+        {<span style="color:#e6db74">&#34;Michael&#34;</span>, <span style="color:#ae81ff">17</span>},
+        {<span style="color:#e6db74">&#34;Jenny&#34;</span>, <span style="color:#ae81ff">26</span>},
     }
-    fmt.Println(people)
-    sort.Sort(ByAge(people))
-    fmt.Println(people)
-    // Output:
-    // [Bob: 31 John: 42 Michael: 17 Jenny: 26]
-    // [Michael: 17 Jenny: 26 Bob: 31 John: 42]
-}
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">people</span>)
+    <span style="color:#a6e22e">sort</span>.<span style="color:#a6e22e">Sort</span>(<span style="color:#a6e22e">ByAge</span>(<span style="color:#a6e22e">people</span>))
+    <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#a6e22e">people</span>)
+    <span style="color:#75715e">// Output:
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// [Bob: 31 John: 42 Michael: 17 Jenny: 26]
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// [Michael: 17 Jenny: 26 Bob: 31 John: 42]
+</span><span style="color:#75715e"></span>}
 
-</code></pre>
-
+</code></pre></div>
       </article>
       
     </main>

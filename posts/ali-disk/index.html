@@ -73,71 +73,54 @@
           <p class="post-date">Posted <time datetime="2018-07-11">Jul 11, 2018</time></p>
         </header>
         
-        
-
-<h3 id="背景">背景</h3>
-
+        <h3 id="heading">背景</h3>
 <p>在阿里云的服务器快满的时候，购买了磁盘扩容服务，虽然不用重启，但是需要自己分区</p>
-
-<h3 id="系统">系统</h3>
-
+<h3 id="heading-1">系统</h3>
 <p>操作系统：Centos7</p>
-
 <p>内核版本：3.10.0</p>
-
-<h3 id="步骤">步骤</h3>
-
+<h3 id="heading-2">步骤</h3>
 <p>0x1.安装磁盘工具</p>
-
-<pre><code class="language-shell">yum install cloud-utils-growpart
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install cloud-utils-growpart
 yum install xfsprogs
 
-</code></pre>
-
-<p>0x2.查看现有云盘大小<br />
-&gt;在购买后磁盘大小为85G，记录好磁盘挂在信息</p>
-
-<p>[root@&hellip; ~]# fdisk -l<br />
-磁盘 <code>/dev/vda</code>：85.9 GB, 85899345920 字节，167772160 个扇区<br />
-Units = 扇区 of 1 * 512 = 512 bytes<br />
-扇区大小(逻辑/物理)：512 字节 / 512 字节<br />
-I/O 大小(最小/最佳)：512 字节 / 512 字节<br />
-磁盘标签类型：dos<br />
+</code></pre></div><p>0x2.查看现有云盘大小</p>
+<blockquote>
+<p>在购买后磁盘大小为85G，记录好磁盘挂在信息</p>
+</blockquote>
+<p>[root@&hellip; ~]# fdisk -l<br>
+磁盘 <code>/dev/vda</code>：85.9 GB, 85899345920 字节，167772160 个扇区<br>
+Units = 扇区 of 1 * 512 = 512 bytes<br>
+扇区大小(逻辑/物理)：512 字节 / 512 字节<br>
+I/O 大小(最小/最佳)：512 字节 / 512 字节<br>
+磁盘标签类型：dos<br>
 磁盘标识符：0x0008d73a</p>
-
-<p>设备        Boot      Start    End        Blocks    Id     System<br />
+<p>设备        Boot      Start    End        Blocks    Id     System<br>
 /dev/vda1   *        2048    83884031    41940992   83  Linux</p>
-
-<p>3.查看云盘分区大小<br />
-&gt; 当前40G</p>
-
-<p>[root@&hellip; ~]# df -h<br />
-文件系统        容量  已用  可用 已用% 挂载点<br />
-/dev/vda1        40G   19G   19G   51% /<br />
-devtmpfs        1.9G     0  1.9G    0% /dev<br />
-tmpfs           1.9G     0  1.9G    0% /dev/shm<br />
-tmpfs           1.9G  632K  1.9G    1% /run<br />
-tmpfs           1.9G     0  1.9G    0% /sys/fs/cgroup<br />
+<p>3.查看云盘分区大小</p>
+<blockquote>
+<p>当前40G</p>
+</blockquote>
+<p>[root@&hellip; ~]# df -h<br>
+文件系统        容量  已用  可用 已用% 挂载点<br>
+/dev/vda1        40G   19G   19G   51% /<br>
+devtmpfs        1.9G     0  1.9G    0% /dev<br>
+tmpfs           1.9G     0  1.9G    0% /dev/shm<br>
+tmpfs           1.9G  632K  1.9G    1% /run<br>
+tmpfs           1.9G     0  1.9G    0% /sys/fs/cgroup<br>
 tmpfs           380M     0  380M    0% /run/user/0</p>
-
-<p>4.运行<code>growpart</code><br />
-&gt; growpart <code>参数1:要扩容的云盘, 参数2:第几个分区</code></p>
-
+<p>4.运行<code>growpart</code></p>
+<blockquote>
+<p>growpart <code>参数1:要扩容的云盘, 参数2:第几个分区</code></p>
+</blockquote>
 <p>[root@ecshost ~]# growpart /dev/vda 1</p>
-
-<p><strong>报错了。。。</strong><br />
+<p><strong>报错了。。。</strong><br>
 <strong>unexpected output in sfdisk &ndash;version [sfdisk，来自 util-linux 2.23.2]</strong></p>
-
-<p>解决办法:<br />
-由于语言问题，导致报错，设置lang值为英文后解决<br />
+<p>解决办法:<br>
+由于语言问题，导致报错，设置lang值为英文后解决 <br>
 [root@ecshost ~]#LANG=en_US.UTF-8</p>
-
 <p>5.运行<code>resize2fs</code></p>
-
-<pre><code class="language-shell">resize2fs /dev/vda1  
-</code></pre>
-
-<p>然后查看硬盘容量</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">resize2fs /dev/vda1  
+</code></pre></div><p>然后查看硬盘容量</p>
 
       </article>
       

@@ -73,34 +73,25 @@
           <p class="post-date">Posted <time datetime="2018-03-10">Mar 10, 2018</time></p>
         </header>
         
-        
-
-<h2 id="背景">背景</h2>
-
+        <h2 id="heading">背景</h2>
 <p>从mysql转为pg，对增删改查的语法没太多变化，但<code>预处理</code>还是有些不同</p>
-
 <h3 id="mysql">Mysql</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-<pre><code class="language-golang">package main
+<span style="color:#f92672">...</span>
+<span style="color:#f92672">...</span>
 
-...
-...
+<span style="color:#a6e22e">_stmt</span>,<span style="color:#a6e22e">_</span><span style="color:#f92672">:=</span><span style="color:#a6e22e">mysql</span>.<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Prepare</span>(<span style="color:#e6db74">&#34;SELECT * FROM table WHERE a=? AND b=?&#34;</span>)
 
-_stmt,_:=mysql.db.Prepare(&quot;SELECT * FROM table WHERE a=? AND b=?&quot;)
+<span style="color:#a6e22e">_stmt</span>.<span style="color:#a6e22e">Exec</span>(<span style="color:#a6e22e">a1</span>,<span style="color:#a6e22e">b1</span>)
+</code></pre></div><h3 id="postgresql">Postgresql</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#f92672">package</span> <span style="color:#a6e22e">main</span>
 
-_stmt.Exec(a1,b1)
-</code></pre>
-
-<h3 id="postgresql">Postgresql</h3>
-
-<pre><code class="language-golang">package main
-
-...
-...
-_stmt,_:=pg.db.Prepare(&quot;SELECT * FROM table WHERE a=$1 AND b=$2&quot;)
-_stmt.Exec(a1,b1)
-</code></pre>
-
+<span style="color:#f92672">...</span>
+<span style="color:#f92672">...</span>
+<span style="color:#a6e22e">_stmt</span>,<span style="color:#a6e22e">_</span><span style="color:#f92672">:=</span><span style="color:#a6e22e">pg</span>.<span style="color:#a6e22e">db</span>.<span style="color:#a6e22e">Prepare</span>(<span style="color:#e6db74">&#34;SELECT * FROM table WHERE a=$1 AND b=$2&#34;</span>)
+<span style="color:#a6e22e">_stmt</span>.<span style="color:#a6e22e">Exec</span>(<span style="color:#a6e22e">a1</span>,<span style="color:#a6e22e">b1</span>)
+</code></pre></div>
       </article>
       
     </main>

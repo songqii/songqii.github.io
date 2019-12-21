@@ -73,38 +73,21 @@
           <p class="post-date">Posted <time datetime="2018-06-11">Jun 11, 2018</time></p>
         </header>
         
-        
-
-<h3 id="背景">背景</h3>
-
+        <h3 id="heading">背景</h3>
 <p>一个爬虫程序，流程是抓取到具体数据存入struct，把struct塞入一个全局channel，单独起一个写成处理入库的事情
 但部署到生产环境后，发现cpu占用100%</p>
-
-<p><img src="https://raw.githubusercontent.com/songqii/songqii.github.io/master/images/golang_cpu.png" alt="avatar" /></p>
-
-<h3 id="本地处理">本地处理</h3>
-
+<p><img src="https://raw.githubusercontent.com/songqii/songqii.github.io/master/images/golang_cpu.png" alt="avatar"></p>
+<h3 id="heading-1">本地处理</h3>
 <p>在程序入口加入一个写成，开启一个端口</p>
-
-<pre><code class="language-golang">go func() {
-		http.ListenAndServe(&quot;127.0.0.1:6060&quot;, nil)
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-golang" data-lang="golang"><span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() {
+		<span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">ListenAndServe</span>(<span style="color:#e6db74">&#34;127.0.0.1:6060&#34;</span>, <span style="color:#66d9ef">nil</span>)
 	}()
-</code></pre>
-
-<p>在本地控制台输入</p>
-
-<pre><code class="language-shell">go tool pprof http://127.0.0.1:6060/debug/pprof/profile
-</code></pre>
-
-<p>pprof蹦出来之后<code>(大概30s的时间，因为需要分析)</code>输入</p>
-
-<pre><code class="language-shell">top10
-</code></pre>
-
-<p>显示cpu占用过高的函数</p>
-
-<h3 id="结果">结果</h3>
-
+</code></pre></div><p>在本地控制台输入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go tool pprof http://127.0.0.1:6060/debug/pprof/profile
+</code></pre></div><p>pprof蹦出来之后<code>(大概30s的时间，因为需要分析)</code>输入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">top10
+</code></pre></div><p>显示cpu占用过高的函数</p>
+<h3 id="heading-2">结果</h3>
 <p>根据pprof显示的问题，对具体函数做优化</p>
 
       </article>

@@ -28,7 +28,7 @@
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/flutter/</guid>
-      <description> Flutter是什么 又来一个dart IDE Demo </description>
+      <description>Flutter是什么 又来一个dart IDE Demo </description>
     </item><item>
       <title>永远没有争第一的心</title>
       <link>https://songqii.github.io/posts/just2/</link>
@@ -43,10 +43,9 @@
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/my-first-post/</guid>
-      <description> 希望自己的博客可以有更多有用的东西 关于Hugo golang编写的静态网站生成工具，和jekyll类似
-markdown语法 这段文字将被高亮显示&amp;hellip;
-标记下重点: Happy day
-func main(){ fmt.Println(&amp;quot;http://blog.songqi.me&amp;quot;) }   这是引用的内容
+      <description>希望自己的博客可以有更多有用的东西 关于Hugo golang编写的静态网站生成工具，和jekyll类似
+markdown语法 这段文字将被高亮显示&amp;hellip;标记下重点: Happy day
+func main(){ fmt.Println(&amp;#34;http://blog.songqi.me&amp;#34;) }  这是引用的内容
  </description>
     </item>
   </channel>
