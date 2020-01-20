@@ -23,13 +23,6 @@
       <guid>https://songqii.github.io/posts/axure/</guid>
       <description>AxureRP 9 激活码</description>
     </item><item>
-      <title>Homebrew中的cask</title>
-      <link>https://songqii.github.io/posts/homebrew-and-cask/</link>
-      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/homebrew-and-cask/</guid>
-      <description>brew cask</description>
-    </item><item>
       <title>Mac安装minikube</title>
       <link>https://songqii.github.io/posts/minikube/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
@@ -56,6 +49,13 @@
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/posts/golang-lib-sort/</guid>
+      <description>介绍sort的使用方法</description>
+    </item><item>
+      <title>golang标准库-strings</title>
+      <link>https://songqii.github.io/posts/golang-lib-strings/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/golang-lib-strings/</guid>
       <description>介绍sort的使用方法</description>
     </item>
   </channel>
