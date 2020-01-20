@@ -43,13 +43,23 @@
   </url>
   
   <url>
+    <loc>https://songqii.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
+    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://songqii.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2019-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://songqii.github.io/tags/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2019-04-13T00:00:00+00:00</lastmod>
+    <loc>https://songqii.github.io/posts/homebrew-and-cask/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/k8s/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -59,6 +69,21 @@
   
   <url>
     <loc>https://songqii.github.io/tags/linux/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/mac/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/mac/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/minikube/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   

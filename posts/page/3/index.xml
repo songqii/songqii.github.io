@@ -9,6 +9,21 @@
         <atom:link href="https://songqii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Flutter是什么</title>
+      <link>https://songqii.github.io/posts/flutter/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/flutter/</guid>
+      <description>Flutter是什么 又来一个dart IDE Demo </description>
+    </item><item>
+      <title>永远没有争第一的心</title>
+      <link>https://songqii.github.io/posts/just2/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/just2/</guid>
+      <description> 只做第二，挺好
+ </description>
+    </item><item>
       <title>话说hugo和markdown</title>
       <link>https://songqii.github.io/posts/my-first-post/</link>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>

@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac - Sq&#39;s blog</title>
+    <link>https://songqii.github.io/categories/mac/</link>
+    <description>Recent content in mac on Sq&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+        <atom:link href="https://songqii.github.io/categories/mac/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Homebrew中的cask</title>
+      <link>https://songqii.github.io/posts/homebrew-and-cask/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/homebrew-and-cask/</guid>
+      <description>brew cask</description>
+    </item><item>
+      <title>Mac安装minikube</title>
+      <link>https://songqii.github.io/posts/minikube/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/minikube/</guid>
+      <description>minikube国内的安装步骤</description>
+    </item>
+  </channel>
+</rss>

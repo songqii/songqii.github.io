@@ -9,6 +9,13 @@
         <atom:link href="https://songqii.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>cpu</title>
+      <link>https://songqii.github.io/tags/cpu/</link>
+      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/tags/cpu/</guid>
+      <description></description>
+    </item><item>
       <title>标准库</title>
       <link>https://songqii.github.io/tags/%E6%A0%87%E5%87%86%E5%BA%93/</link>
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
@@ -49,13 +56,6 @@
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
       
       <guid>https://songqii.github.io/tags/index/</guid>
-      <description></description>
-    </item><item>
-      <title>dart</title>
-      <link>https://songqii.github.io/tags/dart/</link>
-      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/tags/dart/</guid>
       <description></description>
     </item>
   </channel>

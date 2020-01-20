@@ -23,6 +23,20 @@
       <guid>https://songqii.github.io/posts/axure/</guid>
       <description>AxureRP 9 激活码</description>
     </item><item>
+      <title>Homebrew中的cask</title>
+      <link>https://songqii.github.io/posts/homebrew-and-cask/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/homebrew-and-cask/</guid>
+      <description>brew cask</description>
+    </item><item>
+      <title>Mac安装minikube</title>
+      <link>https://songqii.github.io/posts/minikube/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/minikube/</guid>
+      <description>minikube国内的安装步骤</description>
+    </item><item>
       <title>mysql的explain、pg的explain、mongo的explain</title>
       <link>https://songqii.github.io/posts/explain_for_db/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
@@ -43,20 +57,6 @@
       
       <guid>https://songqii.github.io/posts/golang-lib-sort/</guid>
       <description>介绍sort的使用方法</description>
-    </item><item>
-      <title>golang标准库-strings</title>
-      <link>https://songqii.github.io/posts/golang-lib-strings/</link>
-      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/golang-lib-strings/</guid>
-      <description>介绍sort的使用方法</description>
-    </item><item>
-      <title>记一次golang爬虫占用CPU过高的处理办法</title>
-      <link>https://songqii.github.io/posts/golang_cpu100/</link>
-      <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/golang_cpu100/</guid>
-      <description>Golang程序占用cpu过高</description>
     </item>
   </channel>
 </rss>
