@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>golang1.13 配置env  &middot; Sq&#39;s blog</title>
-  <meta name="description" content="如何设置 GOPRIVATE 和 GOSUMDB" />
+  <title>grpc中FromOutgoingContext和FromIncomingContext的区别 &middot; Sq&#39;s blog</title>
+  <meta name="description" content="介绍下FromOutgoingContext和FromIncomingContext的区别" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   
@@ -69,19 +69,25 @@
     <main class="content side-text-padding">
       <article class="post dropcase">
         <header class="post-header">
-        	<h1 class="post-title">golang1.13 配置env </h1>
-          <p class="post-date">Posted <time datetime="2019-10-10">Oct 10, 2019</time></p>
+        	<h1 class="post-title">grpc中FromOutgoingContext和FromIncomingContext的区别</h1>
+          <p class="post-date">Posted <time datetime="2019-07-11">Jul 11, 2019</time></p>
         </header>
         
-        <p>golang1.13版本新出了 <code>GOPRIVATE</code>, <code>GOSUMDB</code></p>
-<p>这个需要配置下</p>
-<p>不进行包校验</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go env -w GOSUMDB<span style="color:#f92672">=</span>off
-</code></pre></div><p>不使用goproxy拉取的地址</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go env -w GOPRIVATE<span style="color:#f92672">=</span>*.your-doamin.com
-</code></pre></div><p>设置代理</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">go env -w GOPROXY<span style="color:#f92672">=</span>https://goproxy.io,direct
-</code></pre></div><p>这样拉取公司的私有代码将不走proxy</p>
+        <p>对于FromOutgoingContext和FromIncomingContext的区别，中文介绍的很少</p>
+<p>golang doc的介绍:</p>
+<blockquote>
+<p>FromIncomingContext returns the incoming metadata in ctx if it exists. The returned MD should not be modified. Writing to it may cause races. Modification should be made to copies of the returned MD.</p>
+</blockquote>
+<p>两个方法介绍都一样。。。。</p>
+<p>其实：</p>
+<blockquote>
+<p>FromOutgoingContext</p>
+</blockquote>
+<p>是<code>客户端</code>在写入之后，为了验证，调用的</p>
+<blockquote>
+<p>FromIncomingContext</p>
+</blockquote>
+<p>是<code>服务端</code>调用的</p>
 
       </article>
       
@@ -89,14 +95,14 @@
     <nav class="end-nav side-padding">
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/metadata/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/axure/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">grpc中FromOutgoingContext和FromIncomingContext的区别</h2>
-    <p class="card-text">介绍下FromOutgoingContext和FromIncomingContext的区别</p>
+    <h2 class="card-title">AxureRP 9 激活码</h2>
+    <p class="card-text">AxureRP 9 激活码</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2019-07-11 711:00">Jul 11, 2019</time></p>
-      <p>#golang </p>
+      <p>Posted <time datetime="2019-04-13 413:00">Apr 13, 2019</time></p>
+      <p>#随笔 </p>
     </div>
   </article>
 </a>
