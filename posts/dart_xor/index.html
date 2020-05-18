@@ -73,10 +73,9 @@
           <p class="post-date">Posted <time datetime="2019-07-11">Jul 11, 2019</time></p>
         </header>
         
-        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> XorData(List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> l) {
-  <span style="color:#66d9ef">var</span> key <span style="color:#f92672">=</span> utf8.encode(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">aabbcc</span><span style="color:#e6db74">&#39;</span>);
+        <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart">List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> XorData(List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> l, <span style="color:#66d9ef">String</span> key) {
+  <span style="color:#66d9ef">var</span> key <span style="color:#f92672">=</span> utf8.encode(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">key</span><span style="color:#e6db74">&#39;</span>);
   <span style="color:#66d9ef">var</span> keyCount <span style="color:#f92672">=</span> key.length;
-
   <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, max <span style="color:#f92672">=</span> l.length; i <span style="color:#f92672">&lt;</span> max; i<span style="color:#f92672">+</span><span style="color:#f92672">+</span>) {
     l[i] <span style="color:#f92672">^</span><span style="color:#f92672">=</span> key[i<span style="color:#f92672">%</span>keyCount];
   }
