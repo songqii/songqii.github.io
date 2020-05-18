@@ -1,12 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>dart - Sq&#39;s blog</title>
-    <link>https://songqii.github.io/tags/dart/</link>
+    <link>https://songqii.github.io/categories/dart/</link>
     <description>Recent content in dart on Sq&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://songqii.github.io/tags/dart/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://songqii.github.io/categories/dart/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Dart语言的异或算法</title>
@@ -15,13 +15,6 @@
       
       <guid>https://songqii.github.io/posts/dart_xor/</guid>
       <description>xor</description>
-    </item><item>
-      <title>Flutter是什么</title>
-      <link>https://songqii.github.io/posts/flutter/</link>
-      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/flutter/</guid>
-      <description>Flutter是什么 又来一个dart IDE Demo </description>
     </item>
   </channel>
 </rss>

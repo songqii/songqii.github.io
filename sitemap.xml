@@ -8,12 +8,12 @@
   </url>
   
   <url>
-    <loc>https://songqii.github.io/tags/golang/</loc>
+    <loc>https://songqii.github.io/categories/golang/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://songqii.github.io/categories/golang/</loc>
+    <loc>https://songqii.github.io/tags/golang/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -35,6 +35,21 @@
   <url>
     <loc>https://songqii.github.io/tags/</loc>
     <lastmod>2019-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/categories/dart/</loc>
+    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/dart/</loc>
+    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/posts/dart_xor/</loc>
+    <lastmod>2019-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -68,22 +83,22 @@
   </url>
   
   <url>
-    <loc>https://songqii.github.io/categories/linux/</loc>
-    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://songqii.github.io/tags/linux/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://songqii.github.io/tags/mac/</loc>
+    <loc>https://songqii.github.io/categories/linux/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://songqii.github.io/categories/mac/</loc>
+    <lastmod>2018-07-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://songqii.github.io/tags/mac/</loc>
     <lastmod>2018-07-11T00:00:00+00:00</lastmod>
   </url>
   
@@ -200,11 +215,6 @@
   <url>
     <loc>https://songqii.github.io/posts/mongo-index/</loc>
     <lastmod>2016-03-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://songqii.github.io/tags/dart/</loc>
-    <lastmod>2016-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>

@@ -9,6 +9,13 @@
         <atom:link href="https://songqii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>阿里云扩容</title>
+      <link>https://songqii.github.io/posts/ali-disk/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/ali-disk/</guid>
+      <description>阿里云磁盘扩容backup</description>
+    </item><item>
       <title>golang标准库-sort</title>
       <link>https://songqii.github.io/posts/golang-lib-sort/</link>
       <pubDate>Mon, 11 Jun 2018 00:00:00 +0000</pubDate>
@@ -51,13 +58,6 @@ Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;#34;SELECT * FROM tabl
       
       <guid>https://songqii.github.io/posts/homebrew-and-cask/</guid>
       <description>brew cask</description>
-    </item><item>
-      <title>在地址栏输入URL回车到页面出现，整个过程发生了什么？</title>
-      <link>https://songqii.github.io/posts/what_happend/</link>
-      <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/what_happend/</guid>
-      <description>从浏览器输入URL到页面呈现，背后涉及到的动作知识点非常多</description>
     </item>
   </channel>
 </rss>

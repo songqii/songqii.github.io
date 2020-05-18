@@ -16,6 +16,13 @@
       <guid>https://songqii.github.io/posts/go1.13/</guid>
       <description>如何设置 GOPRIVATE 和 GOSUMDB</description>
     </item><item>
+      <title>Dart语言的异或算法</title>
+      <link>https://songqii.github.io/posts/dart_xor/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/dart_xor/</guid>
+      <description>xor</description>
+    </item><item>
       <title>grpc中FromOutgoingContext和FromIncomingContext的区别</title>
       <link>https://songqii.github.io/posts/metadata/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -50,13 +57,6 @@
       
       <guid>https://songqii.github.io/posts/explain_for_db/</guid>
       <description>各种数据库的explain使用方法</description>
-    </item><item>
-      <title>阿里云扩容</title>
-      <link>https://songqii.github.io/posts/ali-disk/</link>
-      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/ali-disk/</guid>
-      <description>阿里云磁盘扩容backup</description>
     </item>
   </channel>
 </rss>
