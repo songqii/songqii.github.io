@@ -9,12 +9,13 @@
         <atom:link href="https://songqii.github.io/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>golang channel实现</title>
-      <link>https://songqii.github.io/posts/golang-channel/</link>
-      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      <title>golang使用prepare操作postgresqlDB</title>
+      <link>https://songqii.github.io/posts/golang-postgresql-prepare/</link>
+      <pubDate>Sat, 10 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://songqii.github.io/posts/golang-channel/</guid>
-      <description>golang中channel的实现原理介绍</description>
+      <guid>https://songqii.github.io/posts/golang-postgresql-prepare/</guid>
+      <description>背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
+Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;#34;SELECT * FROM table WHERE a=? AND b=?&amp;#34;) _stmt.Exec(a1,b1) Postgresql package main ... ... _stmt,_:=pg.db.Prepare(&amp;#34;SELECT * FROM table WHERE a=$1 AND b=$2&amp;#34;) _stmt.Exec(a1,b1) </description>
     </item>
   </channel>
 </rss>

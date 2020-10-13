@@ -9,6 +9,13 @@
         <atom:link href="https://songqii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>mysql的explain、pg的explain、mongo的explain</title>
+      <link>https://songqii.github.io/posts/explain_for_db/</link>
+      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/explain_for_db/</guid>
+      <description>各种数据库的explain使用方法</description>
+    </item><item>
       <title>阿里云扩容</title>
       <link>https://songqii.github.io/posts/ali-disk/</link>
       <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
@@ -51,13 +58,6 @@
       <guid>https://songqii.github.io/posts/golang-postgresql-prepare/</guid>
       <description>背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
 Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&amp;#34;SELECT * FROM table WHERE a=? AND b=?&amp;#34;) _stmt.Exec(a1,b1) Postgresql package main ... ... _stmt,_:=pg.db.Prepare(&amp;#34;SELECT * FROM table WHERE a=$1 AND b=$2&amp;#34;) _stmt.Exec(a1,b1) </description>
-    </item><item>
-      <title>Homebrew中的cask</title>
-      <link>https://songqii.github.io/posts/homebrew-and-cask/</link>
-      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/homebrew-and-cask/</guid>
-      <description>brew cask</description>
     </item>
   </channel>
 </rss>

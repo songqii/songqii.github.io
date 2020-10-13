@@ -9,6 +9,13 @@
         <atom:link href="https://songqii.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Homebrew中的cask</title>
+      <link>https://songqii.github.io/posts/homebrew-and-cask/</link>
+      <pubDate>Mon, 12 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/homebrew-and-cask/</guid>
+      <description>brew cask</description>
+    </item><item>
       <title>在地址栏输入URL回车到页面出现，整个过程发生了什么？</title>
       <link>https://songqii.github.io/posts/what_happend/</link>
       <pubDate>Wed, 22 Mar 2017 00:00:00 +0000</pubDate>
@@ -22,13 +29,6 @@
       
       <guid>https://songqii.github.io/posts/win_vs_unix/</guid>
       <description>windows 嘛玩意儿？ windows各种坑，编码格式&amp;hellip;</description>
-    </item><item>
-      <title>golang channel实现</title>
-      <link>https://songqii.github.io/posts/golang-channel/</link>
-      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/golang-channel/</guid>
-      <description>golang中channel的实现原理介绍</description>
     </item><item>
       <title>MongoDB的索引</title>
       <link>https://songqii.github.io/posts/mongo-index/</link>

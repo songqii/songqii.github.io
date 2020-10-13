@@ -76,13 +76,14 @@
       
       
       <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://songqii.github.io/posts/golang-channel/" class="card blog-card" rel="bookmark" >
+  href="https://songqii.github.io/posts/golang-postgresql-prepare/" class="card blog-card" rel="bookmark" >
   
   <article class="card-body">
-    <h2 class="card-title">golang channel实现</h2>
-    <p class="card-text">golang中channel的实现原理介绍</p>
+    <h2 class="card-title">golang使用prepare操作postgresqlDB</h2>
+    <p class="card-text">背景 从mysql转为pg，对增删改查的语法没太多变化，但预处理还是有些不同
+Mysql package main ... ... _stmt,_:=mysql.db.Prepare(&#34;SELECT * FROM table WHERE a=? AND b=?&#34;) _stmt.Exec(a1,b1) Postgresql package main ... ... _stmt,_:=pg.db.Prepare(&#34;SELECT * FROM table WHERE a=$1 AND b=$2&#34;) _stmt.Exec(a1,b1) </p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2016-06-13">Jun 13, 2016</time></p>
+      <p>Posted <time datetime="2018-03-10">Mar 10, 2018</time></p>
       <p>#golang </p>
     </div>
   </article>

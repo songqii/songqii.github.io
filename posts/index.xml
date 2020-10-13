@@ -30,6 +30,13 @@
       <guid>https://songqii.github.io/posts/metadata/</guid>
       <description>介绍下FromOutgoingContext和FromIncomingContext的区别</description>
     </item><item>
+      <title>golang channel实现</title>
+      <link>https://songqii.github.io/posts/golang-channel/</link>
+      <pubDate>Thu, 13 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/golang-channel/</guid>
+      <description>golang中channel的实现原理介绍</description>
+    </item><item>
       <title>AxureRP 9 激活码</title>
       <link>https://songqii.github.io/posts/axure/</link>
       <pubDate>Sat, 13 Apr 2019 00:00:00 +0000</pubDate>
@@ -50,13 +57,6 @@
       
       <guid>https://songqii.github.io/posts/minikube/</guid>
       <description>minikube国内的安装步骤</description>
-    </item><item>
-      <title>mysql的explain、pg的explain、mongo的explain</title>
-      <link>https://songqii.github.io/posts/explain_for_db/</link>
-      <pubDate>Wed, 11 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/explain_for_db/</guid>
-      <description>各种数据库的explain使用方法</description>
     </item>
   </channel>
 </rss>
