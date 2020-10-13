@@ -23,6 +23,13 @@
       <guid>https://songqii.github.io/posts/win_vs_unix/</guid>
       <description>windows 嘛玩意儿？ windows各种坑，编码格式&amp;hellip;</description>
     </item><item>
+      <title>golang channel实现</title>
+      <link>https://songqii.github.io/posts/golang-channel/</link>
+      <pubDate>Mon, 13 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://songqii.github.io/posts/golang-channel/</guid>
+      <description>golang中channel的实现原理介绍</description>
+    </item><item>
       <title>MongoDB的索引</title>
       <link>https://songqii.github.io/posts/mongo-index/</link>
       <pubDate>Fri, 11 Mar 2016 00:00:00 +0000</pubDate>
@@ -54,13 +61,6 @@
 markdown语法 这段文字将被高亮显示&amp;hellip;标记下重点: Happy day
 func main(){ fmt.Println(&amp;#34;http://blog.songqi.me&amp;#34;) }  这是引用的内容
  </description>
-    </item><item>
-      <title>刷刷github</title>
-      <link>https://songqii.github.io/posts/spf13-vim-3-0-release-and-new-website/</link>
-      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://songqii.github.io/posts/spf13-vim-3-0-release-and-new-website/</guid>
-      <description>嗯？</description>
     </item>
   </channel>
 </rss>
